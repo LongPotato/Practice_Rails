@@ -1,8 +1,6 @@
 #Rails Projects Repo
 
-This repo is where I save my small Ruby on Rails projects.
-
-Follow the curriculum on [The Odin Project](http://www.theodinproject.com/ruby-on-rails)
+This repo is where I save my small Ruby on Rails projects. Following the [The Odin Project's curriculum ](http://www.theodinproject.com/ruby-on-rails)
 
 ###Micro-Reddit
 

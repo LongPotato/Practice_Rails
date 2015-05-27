@@ -16,6 +16,14 @@ This project focuses mainly on database and models associations. Setting up data
 This project focuses on creating form, managing controllers and routers to handle user input forms.
 
 
+###Members-Only
+
+>In this project, you'll be building an exclusive clubhouse where your members can write embarassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
+
+This project focuses on creating an authentication system: allow users to login and logout. The system stores cookies and display the view base on user's login status.
+
+
+
 
 
 

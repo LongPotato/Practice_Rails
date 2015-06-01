@@ -1,0 +1,29 @@
+<div class="user_cover">
+<h2 class="text-center"><%= @user.name %></h2>
+<p><%= @user.email %></p>
+</div>
+
+<% if current_user?(@user) %>
+<div class="text-center">
+<%= link_to "Create New Event", new_event_path, class: "btn btn-success" %> 
+</div>
+<% end %>
+
+<% if @upcoming_events.any? %>
+<h3>Upcoming</h3>
+<%= render 'events/table', object: @upcoming_events %>
+<% end %>
+
+<% if @previous_events.any? %>
+
+<h3>Attended</h3>
+<%= render 'events/table', object: @previous_events %>
+
+<% end %>
+
+<% if @user.events.any? %>
+<h3>Created by <%= @user.name%></h3>
+
+<%= render 'events/table', object: @user.events %>
+<% end %>
+

@@ -1,0 +1,90 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 730px;
+}
+
+.header,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer {
+  margin-top: 30px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.jumbotron {
+  background-color: #FFFFFF !important;
+}
+
+.jumbotron .btn {
+  padding: 8px 14px;
+  font-size: 16px;
+}
+
+.jumbotron {
+  h1, h2 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;    
+}
+}
+
+.headline {
+  text-align: center;
+  padding-top: 30px;  
+}
+
+.login {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.p_new {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  li {
+    overflow: auto;
+    text-align: center;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 0;
+    &:last-child {
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+}
+
+.user_cover p {
+  text-align: center;
+  color: #777;
+}
+
+    

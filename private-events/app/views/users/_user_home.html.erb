@@ -1,0 +1,9 @@
+<div class="user_cover">
+<h2><%= current_user.name %></h2>
+<p><%= current_user.email %></p>
+</div>
+
+<div class="text-center">
+<%= link_to "View my Profile", user_path(current_user), class: "btn btn-default" %> 
+</div>
+

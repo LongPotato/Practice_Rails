@@ -1,0 +1,9 @@
+<div class="jumbotron">
+<h2>Sign in</h2>
+
+<%= bootstrap_form_for(:session, url: login_path) do |f| %>
+  <%= f.email_field :email %>
+  <%= f.submit "Login",  class: "btn btn-large btn-primary" %>
+<% end %>
+<div class="p_new">New User? <%= link_to 'Sign up now!', new_user_path %></div>
+</div>

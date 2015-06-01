@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PrivateEvents</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+  	<% if logged_in? %>
+  	  <ul class="nav nav-pills pull-right">
+  	  <li><%= nav_link "Home", root_path %></li>
+      <li><%= nav_link "Events", events_path %></li>
+      <li><%= nav_link "Users", users_path %></li>
+      <li><%= link_to "#{current_user.name} (Log Out)", logout_path, method: "delete" %></li>
+      </ul>
+  	<% end %>
+  	<h3 class="text-muted">Private Events</h3>
+  </div>
+  <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>"><%= message %></div>
+  <% end %>
+  <%= yield %>
+  <div class="footer">
+    <p>An event planning application, by <a href="https://github.com/LongPotato/Practice_Rails/tree/master/private-events">LongPotato</a>.</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<div class="user_cover">
+<h2 class="headline"><%= @event.title %></h2>
+<p>created by <%= @event.creator.name %></p>
+</div>
+
+<div class="text-center">
+  	<% if current_user.attending?(@event) %> 
+      <%= form_for(current_user.invites.find_by(attended_event_id: @event.id),
+             html: { method: :delete }) do |f| %>
+        <%= f.submit "Cancel", class: "btn btn-large" %>
+      <% end %>
+    <% else %>
+      <%= form_for(current_user.invites.build(attended_event_id: @event.id)) do |f| %>
+        <div><%= f.hidden_field :attended_event_id %></div>
+        <%= f.submit "Attend", class: "btn btn-large btn-primary" %>
+      <% end %>
+    <% end %>
+</div>
+<br>
+
+<p><b>Date: </b><%= @event.date %></p>
+<p><b>Email: </b><%= @event.creator.email %></p>
+<p><b>Event info: </b></p>
+
+<p><%= @event.description %></p>
+
+</br>
+
+<b>Who's Going:</b>
+
+<ol>
+<% @event.attendees.each do |attendee| %>
+   <li><%= link_to attendee.name, user_path(attendee) %></li>
+<% end %>
+</ol>

@@ -4,7 +4,7 @@ This repo is where I save my implementations for [The Odin Project's](http://www
 
 ###Micro-Reddit
 
-This project focuses mainly on creating simple database tables and models. Setting up database migration and validate user inputs.
+This project focuses mainly on creating simple database tables and models. Setting up database migration and validates user inputs.
 
 ###Re-Former
 
@@ -16,7 +16,7 @@ This project focuses on creating an authentication system: allow users to login 
 
 ###Private-Events
 
-This project combines all the skills practiced from the previous projects. It also focuses on advance models, Active Records, associations, relationship with through table [View it live here](https://afternoon-reef-1518.herokuapp.com).
+This project combines all the skills practiced from the previous projects. It also focuses on creating advance models, Active Records, associations, relationship with through table [View it live here](https://afternoon-reef-1518.herokuapp.com).
 
 
 

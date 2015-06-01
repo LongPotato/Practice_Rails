@@ -22,8 +22,11 @@
 <% end %>
 
 <% if @user.events.any? %>
-<h3>Created by <%= @user.name%></h3>
-
-<%= render 'events/table', object: @user.events %>
+  <% if current_user?(@user) %>
+  <h3>My Events</h3>
+  <% else %>
+  <h3>Created by <%= @user.name%></h3>
+  <% end %>
+  <%= render 'events/table', object: @user.events %>
 <% end %>
 

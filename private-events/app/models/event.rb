@@ -3,6 +3,8 @@ class Event < ActiveRecord::Base
   has_many :invites, :foreign_key => "attended_event_id"
   has_many :attendees, :through => :invites
 
+  validates :date, presence: true
+  
   scope :upcoming, -> { where("Date >= ?", Time.zone.now).order('Date ASC') }
   scope :past, -> { where("Date < ?", Time.zone.now).order('Date DESC') }
 end

@@ -9,7 +9,8 @@ class InvitesController < ApplicationController
   def destroy
     @event = Invite.find(params[:id]).attended_event
     current_user.cancel!(@event)
-    flash[:warning] = "Not attend #{@event.title}!"
+    flash[:warning] = "Will not attend #{@event.title}!"
     redirect_to @event
   end
+
 end

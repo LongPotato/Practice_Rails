@@ -1,0 +1,10 @@
+<div class="jumbotron">
+<h2>Edit Event: <%= @event.title %></h2>
+
+<%= bootstrap_form_for(@event) do |f| %>
+    <%= f.text_field :title %>
+	<%= f.text_area :description %>
+	<%= f.date_field :date %>
+    <%= f.submit "Edit",  class: "btn btn-large btn-primary" %>
+<% end %>
+</div>

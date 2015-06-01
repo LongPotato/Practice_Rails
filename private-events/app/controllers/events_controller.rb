@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   before_action :logged_in_user
-  before_action :correct_creator, only: [:edit, :update]
+  before_action :correct_creator, only: [:edit, :update, :destroy]
 
   def new
     @event = Event.new
@@ -38,6 +38,12 @@ class EventsController < ApplicationController
     else
       render 'edit'
     end
+  end
+
+  def destroy
+    Event.find(params[:id]).destroy
+    flash[:warning] = "Event deleted!"
+    redirect_to user_path(current_user)
   end
 
   private

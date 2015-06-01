@@ -4,7 +4,8 @@ class Event < ActiveRecord::Base
   has_many :attendees, :through => :invites
 
   validates :date, presence: true
-  
+  validates :title, presence: true
+
   scope :upcoming, -> { where("Date >= ?", Time.zone.now).order('Date ASC') }
   scope :past, -> { where("Date < ?", Time.zone.now).order('Date DESC') }
 end

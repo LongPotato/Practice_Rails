@@ -6,5 +6,7 @@
 	<%= f.text_area :description %>
 	<%= f.date_field :date %>
     <%= f.submit "Edit",  class: "btn btn-large btn-primary" %>
+    <%= link_to "Delete this event", @event, method: :delete, data: { confirm: "You sure?" }, class: "btn btn-danger", id: "deletebtn" %>
 <% end %>
 </div>
+

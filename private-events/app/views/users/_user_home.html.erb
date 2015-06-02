@@ -1,6 +1,10 @@
 <div class="user_cover">
 <h2><%= current_user.name %></h2>
-<p><%= current_user.email %></p>
+<% if current_user.attended_events.upcoming.count > 0 %>
+  <p>You have <%= pluralize(current_user.attended_events.upcoming.count, "upcoming event") %></p>
+<% else %>
+  <p>You have no upcoming events</p>
+<% end %>
 </div>
 
 <div class="text-center">

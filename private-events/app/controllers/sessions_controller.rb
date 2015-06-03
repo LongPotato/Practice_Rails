@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user
       flash[:success] = 'Thank you for logging in!'
       log_in user
-      redirect_to user_path(user) 
+      redirect_to root_path
     else
       flash.now[:danger] = 'Invalid email'
       render 'new'

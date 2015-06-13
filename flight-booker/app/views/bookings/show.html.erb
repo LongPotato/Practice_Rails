@@ -1,0 +1,37 @@
+<h1 class="text-center">Booking Confirmation</h1>
+
+<div class="surround">
+
+<p class="text">
+  Thank you for booking your flight with flight-booker.  
+  Your confirmation # is <b><%= @booking.id %></b>.
+</p>
+
+<fieldset>
+  <legend>Trip Details</legend>
+  <h3>Flight #<%= @booking.flight.id %></h3>
+  <h3>
+  <%= @booking.flight.from_airport.code %> -> <%= @booking.flight.to_airport.code %>
+  </h3>
+  <h4><%= @booking.flight.date.strftime("%A, %B %d, %Y") %></h4>
+</fieldset>
+
+<br>
+
+<fieldset>
+  <legend>Passengers</legend>
+  <ol>
+  <% @booking.passengers.each do |passenger| %>
+    <li><p class="text2"> <%="#{passenger.name} <#{passenger.email}>" %> </p></li>
+  <% end %>
+  </ol>
+</fieldset>
+
+<br>
+
+<div align="center">
+<%= link_to "Search another flight", root_path, class: "btn btn-default" %>
+</div>
+
+</div>
+

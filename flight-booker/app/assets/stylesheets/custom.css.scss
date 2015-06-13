@@ -1,0 +1,51 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+body {
+  background-image: image-url('background.jpg');
+  background-size: cover;
+}
+*/
+
+#toolbar {
+  margin-top: 20px;
+}
+
+select {
+  margin-left: 10px;
+  text-align: center;
+}
+
+
+#search-btn {
+  margin-left: 10px;
+}
+
+
+.login {
+  font-size: 14px;
+}
+
+.select-style {
+  margin-top: 20px;
+}
+
+
+.surround {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#select-btn {
+  margin-top: 20px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.text2 {
+  font-size: 18px;
+}

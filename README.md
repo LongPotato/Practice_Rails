@@ -18,7 +18,7 @@ Project focus: creating an authentication system: allow users to login and logou
 
 This project combines all the skills practiced from the previous projects. It also focuses on creating advance models, Active Records, associations.
 
-Build an event planning website, where user needs to create an account to use the service. User can create events, view and participate in listed events.
+Build an events-planning website, where user needs to create an account to use the service. User can create events, view and participate in listed events.
 
 [View it live here](https://afternoon-reef-1518.herokuapp.com).
 

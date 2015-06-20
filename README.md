@@ -28,6 +28,18 @@ Project focus: building advanced forms with search and nested attributes.
 
 Build a flight booker, where user selects flight based on date, departure and arrival airports, and number of passengers. User enters passenger detail on booking page and receives confirmation page.
 
+##Odin-Kittens
+
+Project focus: a simple Rails app that can response to Restful API request.
+
+```
+response = RestClient.get("http://localhost:3000/kittens/2", :accept => :json)
+ => "{\"id\":2,\"name\":\"tintin\",\"age\":1,\"cuteness\":8,\"softness\":10,\"created_at\":\"2015-06-20T06:33:51.772Z\",\"updated_at\":\"2015-06-20T06:33:51.772Z\"}" 
+```
+
+
+
+
 
 
 

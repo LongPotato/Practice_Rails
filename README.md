@@ -30,7 +30,7 @@ Build a flight booker, where user selects flight based on date, departure and ar
 
 ##Odin-Kittens
 
-Project focus: a simple Rails app that can response to Restful API request.
+Project focus: a simple Rails app that can response to Restful API requests.
 
 ```
 response = RestClient.get("http://localhost:3000/kittens/2", :accept => :json)

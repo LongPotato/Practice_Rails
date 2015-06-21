@@ -24,7 +24,7 @@ Build an events-planning website, where user needs to create an account to use t
 
 ##Flight-Booker
 
-Project focus: building advanced forms with search and nested attributes.
+Project focus: building advanced forms with search and nested attributes. Mailers: Sending confirmation emails.
 
 Build a flight booker, where user selects flight based on date, departure and arrival airports, and number of passengers. User enters passenger detail on booking page and receives confirmation emails.
 

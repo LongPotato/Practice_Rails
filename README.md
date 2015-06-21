@@ -26,7 +26,7 @@ Build an events-planning website, where user needs to create an account to use t
 
 Project focus: building advanced forms with search and nested attributes.
 
-Build a flight booker, where user selects flight based on date, departure and arrival airports, and number of passengers. User enters passenger detail on booking page and receives confirmation page.
+Build a flight booker, where user selects flight based on date, departure and arrival airports, and number of passengers. User enters passenger detail on booking page and receives confirmation emails.
 
 ##Odin-Kittens
 
